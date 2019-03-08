@@ -84,7 +84,7 @@ td{
     display: flex;
     border-bottom: 2px solid gainsboro;
     justify-content: space-between;
-    margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 .top-news-header {
