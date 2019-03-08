@@ -48,7 +48,22 @@ header{
 .img-news{
     background-image: url(../images/dog.jpg) ;
     display: flex;
-    height: 80vh;
+    min-height: 30rem;
     background-size: cover;
     background-position: center;
+    align-items: flex-end;
 }
+.img-details{
+    margin: 0 1px 0 1px;
+background-color:rgba(255, 255, 255, 0.7);
+width: 100%;
+}
+.top-news-box{
+    color: gray;
+    display: flex;
+    border-bottom: 2px solid gainsboro;
+    justify-content: space-between;
+}
+.top-news-header{
+    flex-grow: 1;
+    }
