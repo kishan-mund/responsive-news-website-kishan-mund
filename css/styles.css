@@ -1,0 +1,48 @@
+body{
+    margin: 2% 5% 2% 5%;
+}
+header{
+    border-bottom: 5px solid gainsboro;
+    padding-bottom: 1em;
+}
+.div-logo{
+    display: flex;
+}
+.div-logo1{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    padding-left: 50px;
+
+}
+.img-logo
+{
+    display: flex;
+    width: auto;
+}
+.header-box{
+    align-items: center;
+    display: flex;
+}
+.div-title{
+    font-size: 5rem;
+    font-weight: 10;
+    font-family: monospace;
+    max-height: max-content;
+    justify-content: center;
+}
+.nav-box{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    float: left!important;
+    box-sizing: inherit;
+    align-items: inherit;
+    padding: 1em 0 1em 0;
+    color: gray;
+}
+.nav-items{
+    display: inline-flex;
+    font-size: 1rem;
+}
