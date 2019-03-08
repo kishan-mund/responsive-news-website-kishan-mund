@@ -36,7 +36,6 @@ header{
     overflow: hidden;
     display: flex;
     justify-content: space-around;
-    float: left!important;
     box-sizing: inherit;
     align-items: inherit;
     padding: 1em 0 1em 0;
@@ -45,4 +44,11 @@ header{
 .nav-items{
     display: inline-flex;
     font-size: 1rem;
+}
+.img-news{
+    background-image: url(../images/dog.jpg) ;
+    display: flex;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
 }
