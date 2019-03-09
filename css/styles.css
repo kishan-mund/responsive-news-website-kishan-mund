@@ -12,6 +12,7 @@ header {
 a{
     color: gray;
     text-decoration: inherit;
+
 }
 td{
     display: flex;
@@ -92,7 +93,8 @@ td{
 }
 
 .latest-news-block-img{
-    width: 15vw;
+    width: 8vw;
+    float: left;
     padding-right: .5em;
 }
 
@@ -160,7 +162,7 @@ th{
 }
 
 .top-news-article{
-    display: flex;
+    display: inline-block;
     padding: 10px 0;
 }
 footer{
