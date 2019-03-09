@@ -4,6 +4,7 @@ body {
 
 h4 {
     margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 header {
@@ -98,10 +99,12 @@ td {
     flex-grow: 1;
 }
 
-.latest-news-block-img {
-    width: 25%;
+.weather-img{
     float: left;
-    padding-right: .5em;
+}
+.latest-news-block-img {
+    float: left;
+    width:5em;
 }
 
 .top-news-content {
@@ -119,6 +122,7 @@ td {
     padding-inline-start: 0px;
     margin: 0%;
     padding-bottom: 20px;
+    color: gray;
 }
 
 .table-header {
@@ -190,18 +194,25 @@ th {
 .top-news-article {
     display: inline-block;
     padding: 10px 0;
+    color: gray;
 }
 
 .weather-box-div-tab {
     display: none;
+
 }
 
 footer {
-    justify-content: space-around;
     display: flex;
-    box-shadow: 0px 5px 50px 0px gray;
+    box-shadow: 0px 3px 0px 0px gainsboro;
     padding: 10px 0px 10px 0px;
     margin-top: 1em;
+    border-top: 1px solid gainsboro;
+}
+.footer-div{
+    width:60%;
+    display: flex;
+    justify-content: space-around;
 }
 
 
@@ -211,18 +222,18 @@ footer {
 /************/
 
 
-@media only screen and (max-width:800px) {
+@media (min-width:600px) and (max-width:800px) {
     .weather-box-div {
         display: none;
     }
 
     .img-news {
-        width: 50%;
+        width: 60%;
         min-height: 0%;
     }
 
     .weather-box-div-tab {
-        width: 50%;
+        width: 40%;
         display: inline-block;
     }
 
@@ -248,7 +259,7 @@ footer {
     }
 }
 
-@media only screen and (max-width:600px) {
+@media (max-width:600px) and (min-width:450px) {
     .nav-box {
         display: none;
     }
