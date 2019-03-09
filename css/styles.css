@@ -29,13 +29,14 @@ td {
     display: flex;
     width: auto;
     justify-content: center;
-    padding-left: 50px;
+    padding-left: 1em;
 
 }
 
 .img-logo {
     display: flex;
     width: auto;
+    height: 1.5em;
 }
 
 .header-box {
@@ -124,7 +125,8 @@ td {
     width: 100%;
     display: flex;
 }
-.table-header1{
+
+.table-header1 {
     width: 100%;
     display: flex;
 }
@@ -190,9 +192,10 @@ th {
     padding: 10px 0;
 }
 
-.weather-box-div-tab{
+.weather-box-div-tab {
     display: none;
 }
+
 footer {
     justify-content: space-around;
     display: flex;
@@ -212,28 +215,86 @@ footer {
     .weather-box-div {
         display: none;
     }
-    .img-news{
+
+    .img-news {
         width: 50%;
         min-height: 0%;
     }
-    .weather-box-div-tab{
+
+    .weather-box-div-tab {
         width: 50%;
         display: inline-block;
     }
-    .news-weather-box{
+
+    .news-weather-box {
         display: flex;
     }
-    .img-details{
+
+    .img-details {
         font-size: .5em;
         height: auto;
     }
-    .header-box{
+
+    .header-box {
         font-size: 2.5em;
     }
-    .table-header{
+
+    .table-header {
         background-color: aqua;
     }
-    .table-header1{
+
+    .table-header1 {
         background-color: gainsboro;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .nav-box {
+        display: none;
+    }
+
+    .table-header {
+        background-color: aqua;
+    }
+
+    .table-header1 {
+        background-color: gainsboro;
+    }
+
+    .weather-box-div {
+        display: block;
+    }
+
+    .img-news {
+        width: 100%;
+        min-height: 0%;
+    }
+
+    .weather-box-div-tab {
+        display: none;
+    }
+
+    .img-details {
+        font-size: .5em;
+    }
+
+    .news-weather-box {
+        height: 15em;
+        display: flex;
+    }
+
+    .header-box {
+        font-size: 2.0em;
+    }
+
+    .header-menu {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+        
+    }
+    .header-box{
+        justify-content: space-between;
     }
 }
