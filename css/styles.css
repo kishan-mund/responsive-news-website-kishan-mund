@@ -1,7 +1,8 @@
 body {
     margin: 2% 5% 2% 5%;
 }
-h4{
+
+h4 {
     margin-block-start: 0;
 }
 
@@ -9,14 +10,17 @@ header {
     box-shadow: 0px 5px 20px 0px gainsboro;
     padding-bottom: 1em;
 }
-a{
+
+a {
     color: gray;
     text-decoration: inherit;
 
 }
-td{
+
+td {
     display: flex;
 }
+
 .div-logo {
     display: flex;
 }
@@ -37,10 +41,11 @@ td{
 .header-box {
     align-items: center;
     display: flex;
+    font-size: 3.7em;
 }
 
 .div-title {
-    font-size: 5rem;
+    font-size: inherit;
     font-weight: 10;
     font-family: monospace;
     max-height: max-content;
@@ -92,83 +97,143 @@ td{
     flex-grow: 1;
 }
 
-.latest-news-block-img{
-    width: 8vw;
+.latest-news-block-img {
+    width: 25%;
     float: left;
     padding-right: .5em;
 }
 
-.top-news-content{
+.top-news-content {
     border-bottom: 2px solid gainsboro;
     list-style-type: none;
     padding: 1em 0 1em 0;
 }
 
-.top-news-content::before{
+.top-news-content::before {
     content: ">>";
     padding: 5px;
 }
 
-.top-news-content-list{
+.top-news-content-list {
     padding-inline-start: 0px;
     margin: 0%;
     padding-bottom: 20px;
 }
-.table-header{
+
+.table-header {
     width: 100%;
     display: flex;
 }
-.table-details{
+.table-header1{
+    width: 100%;
+    display: flex;
+}
+
+.table-details {
     justify-content: center;
     display: flex;
     width: 100%;
 }
 
-.table-box{
+.table-box {
     width: 100%;
 }
-.table-data{
+
+.table-data {
     padding-left: 2rem;
     line-height: 1.5em;
 }
-table,tr,td,tbody{
+
+table,
+tr,
+td,
+tbody {
     width: 100%;
 }
-th{
+
+th {
     width: 100%;
     font-weight: 100;
 }
-.table-head{
+
+.table-head {
     padding-left: 2rem;
     font-weight: 100;
     color: gray;
     line-height: 1.5em;
 }
-.weather-box{
+
+
+.weather-box {
     font-weight: 100;
     font-size: 1.2em;
-    
+
 }
-.weather-heading{
+
+.weather-heading {
     margin-block-end: -1em;
     font-size: 1.2em;
+    display: block;
 }
-.current-weather{
+
+.current-weather {
     display: flex;
 }
-.weather-forecast{
+
+.weather-forecast {
     display: flex;
     justify-content: space-between;
 }
 
-.top-news-article{
+.top-news-article {
     display: inline-block;
     padding: 10px 0;
 }
-footer{
+
+.weather-box-div-tab{
+    display: none;
+}
+footer {
     justify-content: space-around;
     display: flex;
     box-shadow: 0px 5px 50px 0px gray;
-    padding: 10px 0px 10px 0px ;
+    padding: 10px 0px 10px 0px;
     margin-top: 1em;
+}
+
+
+
+/************/
+/* Tab View */
+/************/
+
+
+@media only screen and (max-width:800px) {
+    .weather-box-div {
+        display: none;
+    }
+    .img-news{
+        width: 50%;
+        min-height: 0%;
+    }
+    .weather-box-div-tab{
+        width: 50%;
+        display: inline-block;
+    }
+    .news-weather-box{
+        display: flex;
+    }
+    .img-details{
+        font-size: .5em;
+        height: auto;
+    }
+    .header-box{
+        font-size: 2.5em;
+    }
+    .table-header{
+        background-color: aqua;
+    }
+    .table-header1{
+        background-color: gainsboro;
+    }
 }
